@@ -3,12 +3,12 @@ entries:
   ah-app:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2023-07-06T17:41:39.609464658-07:00"
+    created: "2023-07-06T23:08:28.41588772-07:00"
     description: A Helm chart for Kubernetes
-    digest: c9c3885fcda256dd3a0ee525d39962d6ac69bddaf1df43a8182d0b17066d8457
+    digest: eecf1a4dbdab0dd32107be7addca626ea347c40a76b6a5cc760c127593b73b48
     name: ah-app
     type: application
     urls:
     - https://elevo-ai.github.io/foresightd/ah-app-0.1.0.tgz
     version: 0.1.0
-generated: "2023-07-06T17:41:39.608805244-07:00"
+generated: "2023-07-06T23:08:28.415205381-07:00"
