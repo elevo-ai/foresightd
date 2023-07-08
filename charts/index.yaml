@@ -3,23 +3,23 @@ entries:
   ah-app:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2023-07-07T18:35:39.617021947-07:00"
+    created: "2023-07-07T23:54:28.562508605-07:00"
     description: A Helm chart for Kubernetes
     digest: eecf1a4dbdab0dd32107be7addca626ea347c40a76b6a5cc760c127593b73b48
     name: ah-app
     type: application
     urls:
-    - https://elevo-ai.github.io/foresightd/charts/ah-app-0.1.0.tgz
+    - ah-app-0.1.0.tgz
     version: 0.1.0
   foresightd-mlflow:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-07T18:35:39.617287928-07:00"
+    created: "2023-07-07T23:54:28.562852583-07:00"
     description: A Helm chart for deploying mlflow
     digest: f595c9079239f0f16bec98859242fffe8c8bf086156c7ffb9c2cdfe3a821d2b9
     name: foresightd-mlflow
     type: application
     urls:
-    - https://elevo-ai.github.io/foresightd/charts/foresightd-mlflow-0.0.1.tgz
+    - foresightd-mlflow-0.0.1.tgz
     version: 0.0.1
-generated: "2023-07-07T18:35:39.616417783-07:00"
+generated: "2023-07-07T23:54:28.561237576-07:00"
