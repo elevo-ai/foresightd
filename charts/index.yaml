@@ -3,7 +3,7 @@ entries:
   ah-app:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2023-07-09T22:50:13.959166325-07:00"
+    created: "2023-07-09T23:42:05.811009512-07:00"
     description: A Helm chart for Kubernetes
     digest: eecf1a4dbdab0dd32107be7addca626ea347c40a76b6a5cc760c127593b73b48
     name: ah-app
@@ -14,14 +14,14 @@ entries:
   foresightd-mlflow:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-09T22:50:13.962875591-07:00"
+    created: "2023-07-09T23:42:05.819517098-07:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
       repository: https://charts.bitnami.com/bitnami
       version: 9.3.4
     description: A Helm chart for deploying mlflow
-    digest: f60c81b19c5f7678ef9cdda22a2b96b80fd50d2446b5bc4cbd4cbd2b258f9ca0
+    digest: 853d26fb66ecfeb819dec95260ad33fbc5aef56b524fb9d7431cf1080effe343
     name: foresightd-mlflow
     type: application
     urls:
@@ -29,7 +29,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-09T22:50:13.959455892-07:00"
+    created: "2023-07-09T23:42:05.81129332-07:00"
     description: A Helm chart for deploying mlflow
     digest: f595c9079239f0f16bec98859242fffe8c8bf086156c7ffb9c2cdfe3a821d2b9
     name: foresightd-mlflow
@@ -37,4 +37,4 @@ entries:
     urls:
     - foresightd-mlflow-0.0.1.tgz
     version: 0.0.1
-generated: "2023-07-09T22:50:13.958577094-07:00"
+generated: "2023-07-09T23:42:05.810454812-07:00"
