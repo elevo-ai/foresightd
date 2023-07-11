@@ -3,7 +3,7 @@ entries:
   ah-app:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2023-07-10T16:59:17.619496342-07:00"
+    created: "2023-07-10T17:30:03.757040147-07:00"
     description: A Helm chart for Kubernetes
     digest: eecf1a4dbdab0dd32107be7addca626ea347c40a76b6a5cc760c127593b73b48
     name: ah-app
@@ -14,9 +14,9 @@ entries:
   foresightd-core:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-10T16:59:17.620030912-07:00"
+    created: "2023-07-10T17:30:03.757429326-07:00"
     description: A Helm chart for deploying foresightd core components
-    digest: c016f49197f797a4a1470cd3b72f405dee212f830a6e5d93ec3b557f07441aa4
+    digest: 993e5fb00ba1621e8457ac78b7df95746e6229b1b81d5825ef46f7c2fa6a94f8
     name: foresightd-core
     type: application
     urls:
@@ -25,7 +25,7 @@ entries:
   foresightd-mlflow:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-10T16:59:17.625893291-07:00"
+    created: "2023-07-10T17:30:03.762470958-07:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -40,7 +40,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-10T16:59:17.620414761-07:00"
+    created: "2023-07-10T17:30:03.7576923-07:00"
     description: A Helm chart for deploying mlflow
     digest: f595c9079239f0f16bec98859242fffe8c8bf086156c7ffb9c2cdfe3a821d2b9
     name: foresightd-mlflow
@@ -48,4 +48,4 @@ entries:
     urls:
     - foresightd-mlflow-0.0.1.tgz
     version: 0.0.1
-generated: "2023-07-10T16:59:17.618850492-07:00"
+generated: "2023-07-10T17:30:03.756424361-07:00"
