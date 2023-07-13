@@ -1,20 +1,9 @@
 apiVersion: v1
 entries:
-  ah-app:
-  - apiVersion: v2
-    appVersion: "1.0"
-    created: "2023-07-12T22:36:08.326687571-07:00"
-    description: A Helm chart for Kubernetes
-    digest: eecf1a4dbdab0dd32107be7addca626ea347c40a76b6a5cc760c127593b73b48
-    name: ah-app
-    type: application
-    urls:
-    - ah-app-0.1.0.tgz
-    version: 0.1.0
   foresightd-console:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-12T22:36:08.327387297-07:00"
+    created: "2023-07-13T00:39:01.736496385-07:00"
     description: A Helm chart for foresightd console
     digest: 99ce963f3f87bddec67fb4352865e20f8e358218145bcebd311d29e4a1c3ffbb
     name: foresightd-console
@@ -22,20 +11,10 @@ entries:
     urls:
     - foresightd-console-1.0.0.tgz
     version: 1.0.0
-  - apiVersion: v2
-    appVersion: 0.0.1
-    created: "2023-07-12T22:36:08.326994588-07:00"
-    description: A Helm chart for foresightd console
-    digest: 3b9860e6936cff44ee889ebbd1926963c47315978c3b18728c10333535aa5d06
-    name: foresightd-console
-    type: application
-    urls:
-    - foresightd-console-0.1.0.tgz
-    version: 0.1.0
   foresightd-core:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-12T22:36:08.32809941-07:00"
+    created: "2023-07-13T00:39:01.736833392-07:00"
     description: A Helm chart for deploying foresightd core components
     digest: 28b5873ab092a7081890c0a042889c6fa069a5d31051d494c6084f280d45e484
     name: foresightd-core
@@ -43,20 +22,10 @@ entries:
     urls:
     - foresightd-core-1.0.0.tgz
     version: 1.0.0
-  - apiVersion: v2
-    appVersion: 0.0.1
-    created: "2023-07-12T22:36:08.327752523-07:00"
-    description: A Helm chart for deploying foresightd core components
-    digest: 6415b367f2baca37ba268fd65ccc97ffa6b9c6bfd878c755c04ed470e3867920
-    name: foresightd-core
-    type: application
-    urls:
-    - foresightd-core-0.1.0.tgz
-    version: 0.1.0
   foresightd-mlearn:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-12T22:36:08.337958259-07:00"
+    created: "2023-07-13T00:39:01.745258199-07:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -69,55 +38,4 @@ entries:
     urls:
     - foresightd-mlearn-1.0.0.tgz
     version: 1.0.0
-  - apiVersion: v2
-    appVersion: 0.0.1
-    created: "2023-07-12T22:36:08.334113839-07:00"
-    dependencies:
-    - condition: mysql.enabled
-      name: mysql
-      repository: https://charts.bitnami.com/bitnami
-      version: 9.3.4
-    description: A Helm chart for deploying foresightd machine learning component
-    digest: bcbb50cb1b4b541a974f2d7085dd2d59f69092480419e96c2d5122b9f622f99d
-    name: foresightd-mlearn
-    type: application
-    urls:
-    - foresightd-mlearn-0.1.1.tgz
-    version: 0.1.1
-  - apiVersion: v2
-    appVersion: 0.0.1
-    created: "2023-07-12T22:36:08.328469996-07:00"
-    description: A Helm chart for deploying foresightd machine learning component
-    digest: 6392d83c49be1b32d15e239c983caee999a732eb547dd2831cabbf569adba9b4
-    name: foresightd-mlearn
-    type: application
-    urls:
-    - foresightd-mlearn-0.1.0.tgz
-    version: 0.1.0
-  foresightd-mlflow:
-  - apiVersion: v2
-    appVersion: 0.0.1
-    created: "2023-07-12T22:36:08.341448287-07:00"
-    dependencies:
-    - condition: mysql.enabled
-      name: mysql
-      repository: https://charts.bitnami.com/bitnami
-      version: 9.3.4
-    description: A Helm chart for deploying mlflow
-    digest: 2421120689b90d0093de8278717c9445298a75997ee1b1c33ea0a22ee744c1d5
-    name: foresightd-mlflow
-    type: application
-    urls:
-    - foresightd-mlflow-0.1.0.tgz
-    version: 0.1.0
-  - apiVersion: v2
-    appVersion: 0.0.1
-    created: "2023-07-12T22:36:08.33819559-07:00"
-    description: A Helm chart for deploying mlflow
-    digest: f595c9079239f0f16bec98859242fffe8c8bf086156c7ffb9c2cdfe3a821d2b9
-    name: foresightd-mlflow
-    type: application
-    urls:
-    - foresightd-mlflow-0.0.1.tgz
-    version: 0.0.1
-generated: "2023-07-12T22:36:08.326020338-07:00"
+generated: "2023-07-13T00:39:01.736024193-07:00"
