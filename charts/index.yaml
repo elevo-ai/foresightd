@@ -3,9 +3,10 @@ entries:
   foresightd-console:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-13T00:39:01.736496385-07:00"
-    description: A Helm chart for foresightd console
-    digest: 99ce963f3f87bddec67fb4352865e20f8e358218145bcebd311d29e4a1c3ffbb
+    created: "2023-07-13T15:19:41.533920135-07:00"
+    description: Foresight console is a Jupyter notebook that initiates all user actions
+      with a sequence of commands to drive Foresight ML pipeline
+    digest: b2713df930fad25d04d219a041e980f2dc20971f393c2aed7276bf7e9c09f3e8
     name: foresightd-console
     type: application
     urls:
@@ -14,9 +15,10 @@ entries:
   foresightd-core:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-13T00:39:01.736833392-07:00"
-    description: A Helm chart for deploying foresightd core components
-    digest: 28b5873ab092a7081890c0a042889c6fa069a5d31051d494c6084f280d45e484
+    created: "2023-07-13T15:19:41.534516135-07:00"
+    description: Foresight core are a set of services which provide support to the
+      pipeline
+    digest: 3e313a7c2f248a12f99e701d3e0f8d0c4a697f83409f2fa6401829bccaa40cf8
     name: foresightd-core
     type: application
     urls:
@@ -25,17 +27,18 @@ entries:
   foresightd-mlearn:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-13T00:39:01.745258199-07:00"
+    created: "2023-07-13T15:19:41.542060903-07:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
       repository: https://charts.bitnami.com/bitnami
       version: 9.3.4
-    description: A Helm chart for deploying foresightd machine learning component
-    digest: 4c0e7f2d09db62d1220957e4c14d9320509386b3adba7524bc1e83a7db046e2c
+    description: Foresight machine learn(mlearn) are a set of services which support
+      ml algorithms
+    digest: 1125d28e033a99c8e7e94ca2ec7683a9db56a372f56739feaa3d46aabc15c33a
     name: foresightd-mlearn
     type: application
     urls:
     - foresightd-mlearn-1.0.0.tgz
     version: 1.0.0
-generated: "2023-07-13T00:39:01.736024193-07:00"
+generated: "2023-07-13T15:19:41.533277976-07:00"
