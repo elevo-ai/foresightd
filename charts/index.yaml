@@ -3,10 +3,10 @@ entries:
   foresightd-console:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-13T15:19:41.533920135-07:00"
+    created: "2023-07-15T15:15:17.823608134-07:00"
     description: Foresight console is a Jupyter notebook that initiates all user actions
       with a sequence of commands to drive Foresight ML pipeline
-    digest: b2713df930fad25d04d219a041e980f2dc20971f393c2aed7276bf7e9c09f3e8
+    digest: 54bd75f06fceb2f20ca3bd4ac179df904a11e42c3f8509276a03c1e8c0795811
     name: foresightd-console
     type: application
     urls:
@@ -15,10 +15,10 @@ entries:
   foresightd-core:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-13T15:19:41.534516135-07:00"
+    created: "2023-07-15T15:15:17.824016592-07:00"
     description: Foresight core are a set of services which provide support to the
       pipeline
-    digest: 3e313a7c2f248a12f99e701d3e0f8d0c4a697f83409f2fa6401829bccaa40cf8
+    digest: 07af68fa7ef417e3165cf2bd95b8be3496c679369aa304294d24fe4398c067aa
     name: foresightd-core
     type: application
     urls:
@@ -27,7 +27,7 @@ entries:
   foresightd-mlearn:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-13T15:19:41.542060903-07:00"
+    created: "2023-07-15T15:15:17.827707231-07:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -35,10 +35,10 @@ entries:
       version: 9.3.4
     description: Foresight machine learn(mlearn) are a set of services which support
       ml algorithms
-    digest: 1125d28e033a99c8e7e94ca2ec7683a9db56a372f56739feaa3d46aabc15c33a
+    digest: 458bc0d7715b1f498a0bb9f33eca8ca23cd8bcb2e7c7f5603fd49adf12427b42
     name: foresightd-mlearn
     type: application
     urls:
     - foresightd-mlearn-1.0.0.tgz
     version: 1.0.0
-generated: "2023-07-13T15:19:41.533277976-07:00"
+generated: "2023-07-15T15:15:17.823133857-07:00"
