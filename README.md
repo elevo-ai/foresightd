@@ -8,14 +8,14 @@ A Helm chart for foresightd platform for machine learning pipelines
 - Persistent Volume(PV) provisioner support in the underlying infrastructure
 
 ## Get Helm Repository Info
-
+```
 helm repo add foresightd https://elevo-ai.github.io/foresightd/charts
 helm repo update
-
+```
 ## Installing the Chart
-
+```
 helm install [RELEASE_NAME] foresightd/foresightd-core
-
+```
 ## Values Files Examples
 
 ## Values
