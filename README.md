@@ -23,6 +23,7 @@ helm install [RELEASE_NAME] foresightd/foresightd-core
 | Key | Type | Default | Description |
 |-----| -----| ------- | ----------- |
 | global.image_registry | string | aizen.repo.com | The docker image registry to use |
+| global.image_tag | string | 0.0.1 | Default tag for the image |
 | global.storage_class | string | standard | Backend storage |
 | global.image_secret | string | "" | Secret to access docker image registry |
 | global.fileshare | string | "" | Local fileshare mount if any exists |
@@ -44,6 +45,7 @@ helm install [RELEASE_NAME] foresightd/foresightd-console
 | Key | Type | Default | Description |
 |-----| -----| ------- | ----------- |
 | global.image_registry | string | aizen.repo.com | The docker image registry to use |
+| global.image_tag | string | 0.0.1 | Default tag for the image |
 | global.storage_class | string | standard | Backend storage |
 | global.image_secret | string | "" | Secret to access docker image registry |
 | global.fileshare | string | "" | Local fileshare mount if any exists |
@@ -66,6 +68,7 @@ helm install [RELEASE_NAME] foresightd/foresightd-mlearn
 | Key | Type | Default | Description |
 |-----| -----| ------- | ----------- |
 | global.image_registry | string | aizen.repo.com | The docker image registry to use |
+| global.image_tag | string | 0.0.1 | Default tag for the image |
 | global.image_secret | string | "" | Secret to access docker image registry |
 | global.fileshare | string | "" | Local fileshare mount if any exists |
 | configmap.enabled | boolean | false | Enable or disable configmap |
