@@ -9,16 +9,16 @@ A Helm chart for foresightd platform for machine learning pipelines
 
 ## Get Helm Repository Info
 ```
-helm repo add foresightd https://elevo-ai.github.io/foresightd/charts
+helm repo add aizen-foresightd https://elevo-ai.github.io/foresightd/charts
 helm repo update
 ```
-## Installing foresightd-core chart
+## Installing foresightd chart
 ```
-helm install [RELEASE_NAME] foresightd/foresightd-core
+helm install [RELEASE_NAME] aizen-foresightd/foresightd
 ```
 ## Values
 
-### foresightd-core
+### foresightd
 
 | Key | Type | Default | Description |
 |-----| -----| ------- | ----------- |
@@ -27,59 +27,21 @@ helm install [RELEASE_NAME] foresightd/foresightd-core
 | global.storage_class | string | standard | Backend storage |
 | global.image_secret | string | "" | Secret to access docker image registry |
 | global.fileshare | string | "" | Local fileshare mount if any exists |
-| configmap.enabled | boolean | true | Enable or disable configmap |
-| core.image_tag | string | 0.0.1 | Image tag for core docker image |
-| core.imagepullpolicy | string | IfNotPresent | Pull policy for docker image |
-| core.volume_size | string | 5Gi | Volume size for core |
-| core.resources.limits.cpu | string | 1 | Max cpu |
-| core.resources.limits.memory | string | 4Gi | Max memory |
-
-## Installing foresightd-console chart
-```
-helm install [RELEASE_NAME] foresightd/foresightd-console
-```
-## Values
-
-### foresightd-console
-
-| Key | Type | Default | Description |
-|-----| -----| ------- | ----------- |
-| global.image_registry | string | aizen.repo.com | The docker image registry to use |
-| global.image_tag | string | 0.0.1 | Default tag for the image |
-| global.storage_class | string | standard | Backend storage |
-| global.image_secret | string | "" | Secret to access docker image registry |
-| global.fileshare | string | "" | Local fileshare mount if any exists |
-| global.foresight_user | string | foresight | Default user to access Jupyter notebook |
-| configmap.enabled | boolean | false | Enable or disable configmap |
-| console.image_tag | string | 0.0.1 | Image tag for console docker image |
-| console.imagepullpolicy | string | IfNotPresent | Pull policy for docker image |
-| console.volume_size | string | 5Gi | Volume size for console |
-| console.resources.limits.cpu | string | 200m | Max cpu |
-| console.resources.limits.memory | string | 2Gi | Max memory |
-
-## Installing foresightd-mlearn chart
-```
-helm install [RELEASE_NAME] foresightd/foresightd-mlearn
-```
-## Values
-
-### foresightd-mlearn
-
-| Key | Type | Default | Description |
-|-----| -----| ------- | ----------- |
-| global.image_registry | string | aizen.repo.com | The docker image registry to use |
-| global.image_tag | string | 0.0.1 | Default tag for the image |
-| global.image_secret | string | "" | Secret to access docker image registry |
-| global.fileshare | string | "" | Local fileshare mount if any exists |
-| configmap.enabled | boolean | false | Enable or disable configmap |
-| mlearn.image_tag | string | 0.0.1 | Image tag for mlearn docker |
-| mlearn.imagepullpolicy | string | IfNotPresent | Pull policy for docker image |
-| mlearn.volume_size | string | 5Gi | Volume size for mlearn |
-| mysql.primary.persistence.storageClass | string | standard | Backend storage |
-| mysql.primary.persistence.size | string | 8Gi | Volume size |
-| mlflow.image_tag | string | 0.0.1 | Image tag for mlflow docker image |
-| mlflow.resources.limits.cpu | string | 200m | Max cpu |
-| mlflow.resources.limits.memory | string | 2Gi | Max memory |
-| mlearn.resources.limits.cpu | string | 2 | Max cpu |
-| mlearn.resources.limits.memory | string | 4Gi | Max memory |
+| foresightd-core.core.image_tag | string | 0.0.1 | Image tag for core docker image |
+| foresightd-core.core.volume_size | string | 5Gi | Volume size for core |
+| foresightd-core.core.resources.limits.cpu | string | 1 | Max cpu |
+| foresightd-core.core.resources.limits.memory | string | 4Gi | Max memory |
+| foresightd-console.console.image_tag | string | 0.0.1 | Image tag for console docker image |
+| foresightd-console.console.volume_size | string | 5Gi | Volume size for console |
+| foresightd-console.console.resources.limits.cpu | string | 1 | Max cpu |
+| foresightd-console.console.resources.limits.memory | string | 4Gi | Max memory |
+| foresightd-mlearn.mlearn.image_tag | string | 0.0.1 | Image tag for mlearn docker |
+| foresightd-mlearn.mlearn.volume_size | string | 5Gi | Volume size for mlearn |
+| foresightd-mlearn.mysql.primary.persistence.storageClass | string | standard | Backend storage |
+| foresightd-mlearn.mysql.primary.persistence.size | string | 8Gi | Volume size |
+| foresightd-mlearn.mlflow.image_tag | string | 0.0.1 | Image tag for mlflow docker image |
+| foresightd-mlearn.mlflow.resources.limits.cpu | string | 200m | Max cpu |
+| foresightd-mlearn.mlflow.resources.limits.memory | string | 2Gi | Max memory |
+| foresightd-mlearn.mlearn.resources.limits.cpu | string | 2 | Max cpu |
+| foresightd-mlearn.mlearn.resources.limits.memory | string | 4Gi | Max memory |
 
