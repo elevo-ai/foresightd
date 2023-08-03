@@ -1,44 +1,24 @@
 apiVersion: v1
 entries:
-  foresightd-console:
+  foresightd:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-07-15T15:15:17.823608134-07:00"
-    description: Foresight console is a Jupyter notebook that initiates all user actions
-      with a sequence of commands to drive Foresight ML pipeline
-    digest: 54bd75f06fceb2f20ca3bd4ac179df904a11e42c3f8509276a03c1e8c0795811
-    name: foresightd-console
-    type: application
-    urls:
-    - foresightd-console-1.0.0.tgz
-    version: 1.0.0
-  foresightd-core:
-  - apiVersion: v2
-    appVersion: 0.0.1
-    created: "2023-07-15T15:15:17.824016592-07:00"
-    description: Foresight core are a set of services which provide support to the
-      pipeline
-    digest: 07af68fa7ef417e3165cf2bd95b8be3496c679369aa304294d24fe4398c067aa
-    name: foresightd-core
-    type: application
-    urls:
-    - foresightd-core-1.0.0.tgz
-    version: 1.0.0
-  foresightd-mlearn:
-  - apiVersion: v2
-    appVersion: 0.0.1
-    created: "2023-07-15T15:15:17.827707231-07:00"
+    created: "2023-08-03T10:06:04.25826027-07:00"
     dependencies:
-    - condition: mysql.enabled
-      name: mysql
-      repository: https://charts.bitnami.com/bitnami
-      version: 9.3.4
-    description: Foresight machine learn(mlearn) are a set of services which support
-      ml algorithms
-    digest: 458bc0d7715b1f498a0bb9f33eca8ca23cd8bcb2e7c7f5603fd49adf12427b42
-    name: foresightd-mlearn
+    - condition: foresightd-core.enabled
+      name: foresightd-core
+      repository: ""
+    - condition: foresightd-console.enabled
+      name: foresightd-console
+      repository: ""
+    - condition: foresightd-mlearn.enabled
+      name: foresightd-mlearn
+      repository: ""
+    description: Helm chart for Aizen foresight desktop deployment
+    digest: 67ba6b9c9e67bd85735a915af7b2300e34907380244988f4e2e00daa0110ec38
+    name: foresightd
     type: application
     urls:
-    - foresightd-mlearn-1.0.0.tgz
+    - foresightd-1.0.0.tgz
     version: 1.0.0
-generated: "2023-07-15T15:15:17.823133857-07:00"
+generated: "2023-08-03T10:06:04.251430036-07:00"
