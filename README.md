@@ -39,6 +39,7 @@ helm install [RELEASE_NAME] aizen-foresightd/foresightd
 | foresightd-mlearn.volume_size | string | 5Gi | Volume size for mlearn |
 | foresightd-mlearn.mysql.primary.persistence.storageClass | string | standard | Backend storage |
 | foresightd-mlearn.mysql.primary.persistence.size | string | 8Gi | Volume size |
+| foresightd-mlearn.mysql.auth.password | string | "" | mysql password for root user |
 | foresightd-mlearn.mlflow.image_tag | string | 0.0.1 | Image tag for mlflow docker image |
 | foresightd-mlearn.mlflow.resources.limits.cpu | string | 200m | Max cpu |
 | foresightd-mlearn.mlflow.resources.limits.memory | string | 2Gi | Max memory |
